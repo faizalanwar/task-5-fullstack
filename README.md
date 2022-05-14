@@ -46,7 +46,9 @@ Tujuan : Agar dapat menerapkan fitur blade serta laravel ui ke dalam project
 
 
 ### how to use
-php artisan passport:client --personal
+php artisan migrate:fresh --seed<br>
+php artisan storage:link<br>
+php artisan passport:client --personal<br>
 1. If you use Postman or other api client app, set the Header,  Accept: application/json 
 2.  goto http://127.0.0.1:8000/api/v1/register then http://127.0.0.1:8000/api/v1/login
 3. copy token to Authorization in header ketika ingin masuk ke api categri atau artikel

@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 
 use App\Models\User;
 
+use Illuminate\Support\Facades\Hash;
 class UserSeeder extends Seeder
 {
     /**
@@ -20,12 +21,12 @@ class UserSeeder extends Seeder
             [
                 'name' => 'user1',
                 'email' => 'user1@gmail.com',
-                'password' => '123',
+                'password' => Hash::make('12345678')
             ],
             [
                 'name' => 'user2',
                 'email' => 'user2@gmail.com',
-                'password' => '123',
+                'password' => Hash::make('12345678')
             ],
         ];
 

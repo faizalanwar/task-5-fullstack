@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->string('image')->nullable();
+            $table->string('image')->default('default.png');
             // $table->foreignId('user_id');
             // $table->foreignId('category_id');
             $table->unsignedBigInteger('user_id');
